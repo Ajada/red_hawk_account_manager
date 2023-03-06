@@ -2,10 +2,11 @@
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
-
-$router->group(['prefix' => 'permission'], function () use ($router) {
-    $router->get('/tes', 'Permission\UserController@index');
+$router->group(['prefix' => 'user'], function () use ($router) 
+{
+    $router->post('', '');
+    $router->get('', '');
+    $router->get('', '');
+    $router->patch('', '');
+    $router->delete('', '');
 });
