@@ -1,16 +1,27 @@
 <template>
-  <div>
-    <h1>Home</h1>
-    <p>
-      <strong>
-        Aqui vai ficar todas as chaves registradas no sistemas
-      </strong>
-    </p>
-    <p>
-      <strong>
-        Quando clicado nela o usuario sera redirecionado para a tela de detalhes onde podera ver e editar suas chavez
-      </strong>
-    </p>
+  <div class="container pt-5">
+    <div class="p-5">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

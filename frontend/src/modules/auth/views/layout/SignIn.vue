@@ -4,17 +4,25 @@
       <i id="user-icon" class="fa-solid fa-circle-user"></i>
     </div>
     <form>
-      <input v-model="param.email" type="text" class="shadow-sm fadeIn second" placeholder="usuario">
-      <input v-model="param.password" type="password" class="shadow-sm fadeIn third" placeholder="senha">
-      <input @click.prevent="login()" type="submit" class="shadow-sm fadeIn fourth" value="Entrar">
+      <InputEmailVue v-model="param.email" :placeholder="'usuario'" />
+      <InputPasswordVue v-model="param.password" :placeholder="'senha'" />
+      <SubmitButtonVue @click.prevent="login()" :label="'Entrar'"/>
     </form>
   </div>
 </template>
 
 <script>
 import { mapActions } from 'vuex'
+import SubmitButtonVue from '@/components/BaseButtons/SubmitButton.vue'
+import InputPasswordVue from '@/components/BaseInputs/InputPassword.vue'
+import InputEmailVue from '@/components/BaseInputs/InputEmail.vue'
 
 export default {
+  components: {
+    SubmitButtonVue,
+    InputPasswordVue,
+    InputEmailVue
+  },
   name: 'SignInComponent',
   data () {
     return {

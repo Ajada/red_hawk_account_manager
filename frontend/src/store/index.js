@@ -12,7 +12,7 @@ export default new Vuex.Store({
   },
   actions: {
     authentication (context, payload) {
-      if (payload.user === 'tes' && payload.pass === '12') { localStorage.__access = 'token_teste' }
+      if (payload.user === 'tes@tes' && payload.pass === '12') { localStorage.__access = 'token_teste' }
       return (window.location.href = '/home')
     //   axios.post('auth/login', payload)
     //     .then(

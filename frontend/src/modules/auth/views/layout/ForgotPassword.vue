@@ -4,14 +4,21 @@
       <i id="user-icon" class="fa-solid fa-circle-user"></i>
     </div>
     <form>
-      <input type="text" id="email" class="fadeIn second" placeholder="email">
-      <input type="submit" class="fadeIn fourth" value="Recuperar Senha">
+      <InputEmailVue :placeholder="'email'" />
+      <SubmitButtonVue :label="'Recuperar Senha'" />
     </form>
   </div>
 </template>
 
 <script>
+import SubmitButtonVue from '@/components/BaseButtons/SubmitButton.vue'
+import InputEmailVue from '@/components/BaseInputs/InputEmail.vue'
+
 export default {
+  components: {
+    InputEmailVue,
+    SubmitButtonVue
+  },
   name: 'ForgotPassword'
 }
 </script>

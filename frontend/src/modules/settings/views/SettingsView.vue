@@ -5,8 +5,6 @@
       <strong>
         Informações sobre a conta do usuario e seus dados para alteração
 
-
-        
       </strong>
     </p>
   </div>
