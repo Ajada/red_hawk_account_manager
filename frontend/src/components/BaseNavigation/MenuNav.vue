@@ -34,15 +34,15 @@ export default {
       activeMenu: false
     }
   },
-  watch: {
-    activeMenu (valor) {
-      addEventListener('touchstart', () => {
-        if (valor) {
-          this.activeMenu = false
-        }
-      })
-    }
-  }
+  // watch: {
+  //   activeMenu (valor) {
+  //     addEventListener('touchstart', () => {
+  //       if (valor) {
+  //         this.activeMenu = false
+  //       }
+  //     })
+  //   }
+  // }
 }
 </script>
 
