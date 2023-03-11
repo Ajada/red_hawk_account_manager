@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div v-if="checkJwt">
-      <LateralMenuVue />
+      <TopMenu />
     </div>
      <transition name="slide" mode="out-in">
       <router-view />
@@ -10,16 +10,15 @@
 </template>
 
 <script>
-import LateralMenuVue from './components/BaseNavigation/LateralMenu.vue'
+import TopMenu from './components/BaseNavigation/TopMenu.vue'
 
 export default {
   components: {
-    LateralMenuVue
+    TopMenu
   },
   computed: {
     checkJwt () {
-      return true
-      // return localStorage.__access && this.$route.path !== '/login' ?  : false
+      return true // return localStorage.__access && this.$route.path !== '/login' ?  : false
     }
   },
   data () {

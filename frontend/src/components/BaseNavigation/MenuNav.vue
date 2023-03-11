@@ -33,7 +33,7 @@ export default {
     return {
       activeMenu: false
     }
-  },
+  }
   // watch: {
   //   activeMenu (valor) {
   //     addEventListener('touchstart', () => {
