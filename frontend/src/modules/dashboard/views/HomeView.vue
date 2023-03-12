@@ -1,27 +1,43 @@
 <template>
   <div class="container">
-    <div class="p-5 justify-content-center">
-      <div class="">
-        <CardDrawer
-          v-for="(item, index) in 5" :key="index"
+    <SimpleModalVue :teamData="tes"/>
+    <div class="p-2 justify-content-center">
+      <div class="mobile-container justify-content-center">
+        <InfoCard
+          v-for="(item, index) in 6" :key="index"
           :myKey="'teste@teste.com'"
           :hashPass="'YByt679FYUo'"
         />
       </div>
     </div>
+    <BaseButtonAdd />
   </div>
 </template>
 
 <script>
-import CardDrawer from '@/components/BaseCards/InfoCard.vue'
+import InfoCard from '@/components/BaseCards/InfoCard.vue'
+import BaseButtonAdd from '@/components/BaseButtons/BaseButtonAdd.vue'
+import SimpleModalVue from '@/components/BaseModals/SimpleModal.vue'
 
 export default {
   components: {
-    CardDrawer
+    InfoCard,
+    BaseButtonAdd,
+    SimpleModalVue
+  },
+  data () {
+    return {
+      tes: {}
+    }
   }
 }
 </script>
 
 <style>
-
+.mobile-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin-bottom: 5px;
+}
 </style>
